@@ -57,7 +57,7 @@ body{
 }
 .pagina__conteudo__titulo{
     font-size: 2rem;
-    align-self: start;
+    align-self: center;
     padding: 1% 0% 2% 4%;
     font-weight: 600;
 }
@@ -68,12 +68,13 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: var(--cor--contraste--fundo);
-    width: 28.1rem;
-    height: 35.6rem;
+    width: 28.1em;
+    height: 27.6rem;
     font-size: 1.2em;
     padding: 1% 1% 1% 1%;
     text-align: left;
     border-radius: 2rem;
+    
     
     
 }
@@ -81,15 +82,17 @@ body{
     display: flex;
     flex-direction: row;
     gap: 9.3rem;
+    
 }
 .pagina__conteudo__mensagem{
     text-align: center;
     display: flex;
     flex-direction: column;
     
-    
-    
-    
+}
+.pagina__conteudo__resultado__output{
+    height: 34em;
+    text-align: left;
 }
 
 .pagina__conteudo__resultado__titulo{
@@ -97,11 +100,16 @@ body{
     font-size: 1em;
     font-weight: 600;
     width:21.8rem;
+    
+    
 }
 .pagina__conteudo__resultado__subtitulo{
     width: 21.8rem;
     text-align: center;
     font-size: .8em;
+    padding: 1% 0% 60% 0%;
+    
+    
 
 }
 
