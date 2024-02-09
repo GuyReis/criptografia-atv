@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+</head>
+<body>
+   <header class="cabecalho">
+    <a class="cabecalho__menu" href="./criptografia-desafio.html">Home</a>
+    <a class="cabecalho__menu" href="https://github.com/GuyReis" target="_blank"> 
+    <img class="cabecalho__github" src="./assets/github-white.png" alt=""></a>
+
+   </header>
+   <main class="pagina">
+    <section class="pagina__conteudo">
+        <h1 class="pagina__conteudo__titulo">Criptografia</h1>
+         <div class="pagina__conteudo__textos">
+            <textarea required class="pagina__conteudo__textarea" name=""cols="" rows="" id="inputTexto" spellcheck="false" oninput="checarInput()" placeholder="Digite seu texto"></textarea>
+                 <div class="pagina__conteudo__resultado" id="textoResultado">
+                    <p class="pagina__conteudo__resultado__titulo">Nenhuma mensagem encontrada</p>
+                    <p class="pagina__conteudo__resultado__subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <div>
+                    <button class="botoes">Copiar</button> 
+                    </div>
+                    
+                 </div>
+                </div>
+                        
+                    <p class="pagina__conteudo__aviso" id="aviso">Apenas letras minúsculas e sem acento.</p>
+                        <div class="pagina__conteudo__botoes">
+                        
+                            <button class="botoes" id="botaoCripto" onclick="criptografarTexto()" disabled>Criptografar</button>
+                            <button class="botoes" id="botaoDescri" onclick="descriptografarTexto()" disabled >Descriptografar</button>
+                        </div>
+    </section>
+   </main>
+    <footer class="rodape">
+        <p class="rodape__conteudo"></a>Developed by <a class="rodape__insta" href=https://www.instagram.com/guyreiis/" target="_blank">Nicholas Reis</a>.©</p>
+        <p class="rodape__conteudo">2024</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</style>
+</html>
