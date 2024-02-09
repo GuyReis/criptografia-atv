@@ -35,10 +35,6 @@ function criptografarTexto(){
     inputValor = inputValor.replace(/o/g, 'ober');
     inputValor = inputValor.replace(/u/g, 'ufat');
     
-    if(inputValor.value().trim !== ''){
-        botaoCopiar.disabled = true;
-        botaoCopiar.classList.add('disabled');
-    }
     resultado.innerHTML = inputValor;
 
     botaoCopiar.addEventListener('click',()=>{
