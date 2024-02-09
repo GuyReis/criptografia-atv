@@ -19,11 +19,13 @@
         <h1 class="pagina__conteudo__titulo">Criptografia</h1>
          <div class="pagina__conteudo__textos">
             <textarea required class="pagina__conteudo__textarea" name=""cols="" rows="" id="inputTexto" spellcheck="false" oninput="checarInput()" placeholder="Digite seu texto"></textarea>
-                 <div class="pagina__conteudo__resultado" id="textoResultado">
+                 <div class="pagina__conteudo__resultado">
+                    <div class="pagina__conteudo__resultado__output" id="textoResultado">
                     <p class="pagina__conteudo__resultado__titulo">Nenhuma mensagem encontrada</p>
                     <p class="pagina__conteudo__resultado__subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
                     <div>
-                    <button class="botoes">Copiar</button> 
+                    <button class="botoes" id="botaoCopiar">Copiar</button> 
                     </div>
                     
                  </div>

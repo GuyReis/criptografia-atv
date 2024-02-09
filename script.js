@@ -2,14 +2,6 @@ let textoResultado = document.getElementById('textoResultado').innerHTML
 let inputTexto = document.getElementById('inputTexto')
 
 
-
-inputTexto.addEventListener('click', function(){
-    if(inputTexto.value === 'Digite seu texto'){
-        inputTexto.value = ''
-    }
-})
-
-
 function checarInput(){
     let inputValor = document.getElementById('inputTexto').value;
     let botaoCripto = document.getElementById('botaoCripto');
@@ -33,39 +25,51 @@ function checarInput(){
 
 
 function criptografarTexto(){
-    
+    let resultado = document.getElementById('textoResultado');
+    let botaoCopiar = document.querySelector('#botaoCopiar');
+
     inputValor = document.getElementById('inputTexto').value.toLowerCase();
     inputValor = inputValor.replace(/e/g, 'enter');
-        inputValor = inputValor.replace(/i/g, 'imes');
-        inputValor = inputValor.replace(/a/g, 'ai');
-        inputValor = inputValor.replace(/o/g, 'ober');
-        inputValor = inputValor.replace(/u/g, 'ufat');
-        let resultado = document.getElementById('textoResultado');
-        let input = document.getElementById('inputTexto').value;
-        
-        resultado.innerHTML = inputValor;
-
-        
+    inputValor = inputValor.replace(/i/g, 'imes');
+    inputValor = inputValor.replace(/a/g, 'ai');
+    inputValor = inputValor.replace(/o/g, 'ober');
+    inputValor = inputValor.replace(/u/g, 'ufat');
     
+    if(inputValor.value().trim !== ''){
+        botaoCopiar.disabled = true;
+        botaoCopiar.classList.add('disabled');
+    }
+    resultado.innerHTML = inputValor;
 
-    console.log(inputValor)
+    botaoCopiar.addEventListener('click',()=>{
+    navigator.clipboard.writeText(inputValor);
+
+})
+
+
 
    }
+
    function descriptografarTexto(){
+
+    let resultado = document.getElementById('textoResultado');
+    let botaoCopiar = document.querySelector('#botaoCopiar');
+
     inputValor = document.getElementById('inputTexto').value.toLowerCase();
     inputValor = inputValor.replace(/enter/g, 'e');
-        inputValor = inputValor.replace(/imes/g, 'i');
-        inputValor = inputValor.replace(/ai/g, 'a');
-        inputValor = inputValor.replace(/ober/g, 'o');
-        inputValor = inputValor.replace(/ufat/g, 'u');
-        let resultado = document.getElementById('textoResultado');
-        resultado.innerHTML = inputValor;
-        
-        
-
-        
+    inputValor = inputValor.replace(/imes/g, 'i');
+    inputValor = inputValor.replace(/ai/g, 'a');
+    inputValor = inputValor.replace(/ober/g, 'o');
+    inputValor = inputValor.replace(/ufat/g, 'u');
     
+    resultado.innerHTML = inputValor;
+    botaoCopiar.addEventListener('click',()=>{
+    navigator.clipboard.writeText(inputValor);
 
-    console.log(inputValor)
-    
-   }
+   })
+}
+
+   
+   
+   
+ 
