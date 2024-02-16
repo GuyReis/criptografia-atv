@@ -25,7 +25,7 @@
                     <p class="pagina__conteudo__resultado__subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
                     </div>
                     <div>
-                    <button class="botoes" id="botaoCopiar" disabled>Copiar</button> 
+                    <button onclick="copiarResultado()" class="botoes" id="botaoCopiar" >Copiar</button> 
                     </div>
                     
                  </div>
@@ -34,8 +34,8 @@
                     <p class="pagina__conteudo__aviso" id="aviso">Apenas letras minúsculas e sem acento.</p>
                         <div class="pagina__conteudo__botoes">
                         
-                            <button class="botoes" id="botaoCripto" onclick="criptografarTexto()" disabled>Criptografar</button>
-                            <button class="botoes" id="botaoDescri" onclick="descriptografarTexto()" disabled >Descriptografar</button>
+                            <button class="botoes" id="botaoCripto" onclick="criptografarInput()" disabled>Criptografar</button>
+                            <button class="botoes" id="botaoDescri" onclick="descriptografarInput()" disabled >Descriptografar</button>
                         </div>
     </section>
    </main>
